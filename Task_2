@@ -4,7 +4,8 @@ truck and automatically assigns the next deliveries in the truck plan. To acompl
 optimized delivery plan with X destinations. The most optimized plan would deliver to the closest X destinations from 
 the start among all of the possible destinations in the plan.
 
-Given an array of N possible delivery destinations, implement an algorithm to create the delivery plan for the closest X destinations.
+Given an array of N possible delivery destinations, implement an algorithm to create the delivery plan for 
+the closest X destinations.
 
 INPUT
 The input to the function/method consists of three arguments.
