@@ -1,0 +1,35 @@
+A grocery delivery service offers consumers the option of purchasing the groceries online and 
+schedule future deliversies of purchased groceries. The backend system dynamically tracks each delivery
+truck and automatically assigns the next deliveries in the truck plan. To acomplish this, the system generates an 
+optimized delivery plan with X destinations. The most optimized plan would deliver to the closest X destinations from 
+the start among all of the possible destinations in the plan.
+
+Given an array of N possible delivery destinations, implement an algorithm to create the delivery plan for the closest X destinations.
+
+INPUT
+The input to the function/method consists of three arguments.
+numDestinations, an integer representing the total number of possible delivery destinations for the truck (N).
+allLocations, a list where each element consists of a pair of integers representing the x and y coordinates of the delivery locations.
+numDeliveries, an integer representing the number of deliveries that will be delivered in the plan (X).
+
+OUTPUT
+Return a list of elements where each element of the list represents the x and y integer coordinates of the delivery destinations.
+
+CONSTRAINTS
+numDeliveries <= numDestinations
+
+NOTE:
+The plan starts from the location [0,0]. The distance of the truck from the delivery destination (x,y) is the square root
+of x^2+y^2. If there are ties then return any of the locations as long as you satisfy returning X deliveries.
+
+EXAMPLE
+Input::
+numDestinations = 3
+allLocations = [[1,2],[3,4],[1,-1]]
+numDeliveries=2
+
+Output::
+[[1,-1],[1,2]]
+
+Explanations::
+The distance of the truck from location [1,2] is square root(5) = 2.236
